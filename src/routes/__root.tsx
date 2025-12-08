@@ -91,7 +91,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
               </div>
               <div className="flex items-center space-x-4">
                 <a
-                  href="./ndhs.pdf"
+                  href="./FR395.pdf"
                   download
                   className="hidden md:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-green-100 text-green-800 border border-green-200 hover:bg-green-200 transition-colors cursor-pointer"
                 >
