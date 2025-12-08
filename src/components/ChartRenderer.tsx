@@ -33,21 +33,25 @@ function CustomTooltip({ active, payload, label, unit }: CustomTooltipProps) {
     return (
       <div className="bg-white p-3 border border-gray-100 shadow-lg rounded-lg text-sm">
         <p className="font-bold text-gray-800 mb-1">{label}</p>
-        {payload.map((entry, index) => (
-          <p
-            key={index}
-            className="flex items-center space-x-2"
-            style={{ color: entry.color }}
-          >
-            <span
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: entry.color }}
-            />
-            <span>
-              {entry.name}: <b>{entry.value}{unit}</b>
-            </span>
-          </p>
-        ))}
+        {payload.map((entry, index) => {
+          const textStyle = { color: entry.color }
+          const dotStyle = { backgroundColor: entry.color }
+          return (
+            <p
+              key={index}
+              className="flex items-center space-x-2"
+              style={textStyle}
+            >
+              <span
+                className="w-2 h-2 rounded-full"
+                style={dotStyle}
+              />
+              <span>
+                {entry.name}: <b>{entry.value}{unit}</b>
+              </span>
+            </p>
+          )
+        })}
       </div>
     )
   }
