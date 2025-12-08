@@ -1,0 +1,10 @@
+{
+  "title": "Place of Delivery",
+  "type": "bar",
+  "data": [
+    { "name": "Health Facility", "value": 51 },
+    { "name": "Home", "value": 48 },
+    { "name": "Other", "value": 1 }
+  ],
+  "color": "#8b5cf6"
+}

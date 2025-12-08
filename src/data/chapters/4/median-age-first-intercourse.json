@@ -1,0 +1,11 @@
+{
+  "title": "Median Age at First Sexual Intercourse",
+  "type": "bar",
+  "data": [
+    { "name": "Women", "value": 17.2 },
+    { "name": "Men", "value": 21.4 }
+  ],
+  "color": "#f43f5e",
+  "unit": "",
+  "domain": [0, 25]
+}

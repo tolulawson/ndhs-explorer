@@ -1,0 +1,11 @@
+{
+  "title": "FGM Prevalence by Age Group",
+  "type": "bar",
+  "data": [
+    { "name": "15-19", "value": 9 },
+    { "name": "20-29", "value": 14 },
+    { "name": "30-39", "value": 18 },
+    { "name": "40-49", "value": 22 }
+  ],
+  "color": "#b45309"
+}

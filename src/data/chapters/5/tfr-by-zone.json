@@ -1,0 +1,15 @@
+{
+  "title": "Total Fertility Rate by Zone",
+  "type": "bar",
+  "data": [
+    { "name": "North Central", "value": 4.9 },
+    { "name": "North East", "value": 6.2 },
+    { "name": "North West", "value": 6.6 },
+    { "name": "South East", "value": 4.2 },
+    { "name": "South South", "value": 3.9 },
+    { "name": "South West", "value": 3.7 }
+  ],
+  "color": "#008751",
+  "unit": "",
+  "domain": [0, 8]
+}

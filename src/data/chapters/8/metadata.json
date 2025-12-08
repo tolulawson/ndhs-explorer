@@ -1,0 +1,16 @@
+{
+  "id": 8,
+  "title": "Infant & Child Mortality",
+  "icon": "Activity",
+  "intro": "Estimates of levels, trends, and differentials in neonatal, postneonatal, infant, child, and under-5 mortality rates.",
+  "subsections": [
+    "8.1 Mortality Levels",
+    "8.2 Perinatal Mortality",
+    "8.3 High-risk Fertility"
+  ],
+  "highlights": [
+    { "label": "Under-5 Mortality", "value": "110" },
+    { "label": "Infant Mortality", "value": "63" },
+    { "label": "Neonatal Mortality", "value": "39" }
+  ]
+}

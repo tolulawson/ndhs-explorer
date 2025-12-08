@@ -1,118 +1,163 @@
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute, Link } from '@tanstack/react-router'
 import {
-  Zap,
-  Server,
-  Route as RouteIcon,
-  Shield,
-  Waves,
-  Sparkles,
-} from 'lucide-react'
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  LabelList,
+} from 'recharts'
+import { Icon } from '../components/Icon'
+import { regionalFertilityData } from '../lib/chapters'
 
-export const Route = createFileRoute('/')({ component: App })
+export const Route = createFileRoute('/')({
+  component: LandingView,
+})
 
-function App() {
-  const features = [
+function LandingView() {
+  const keyStats = [
     {
-      icon: <Zap className="w-12 h-12 text-cyan-400" />,
-      title: 'Powerful Server Functions',
-      description:
-        'Write server-side code that seamlessly integrates with your client components. Type-safe, secure, and simple.',
+      label: 'Households Surveyed',
+      value: '42,000',
+      icon: 'Home' as const,
+      color: 'bg-blue-500',
+      sub: 'Nationally Representative',
     },
     {
-      icon: <Server className="w-12 h-12 text-cyan-400" />,
-      title: 'Flexible Server Side Rendering',
-      description:
-        'Full-document SSR, streaming, and progressive enhancement out of the box. Control exactly what renders where.',
+      label: 'Fertility Rate',
+      value: '5.3',
+      icon: 'Baby' as const,
+      color: 'bg-pink-500',
+      sub: 'Children per Woman',
     },
     {
-      icon: <RouteIcon className="w-12 h-12 text-cyan-400" />,
-      title: 'API Routes',
-      description:
-        'Build type-safe API endpoints alongside your application. No separate backend needed.',
+      label: 'Basic Vaccination',
+      value: '58%',
+      icon: 'Syringe' as const,
+      color: 'bg-purple-500',
+      sub: 'Children 12-23 mos',
     },
     {
-      icon: <Shield className="w-12 h-12 text-cyan-400" />,
-      title: 'Strongly Typed Everything',
-      description:
-        'End-to-end type safety from server to client. Catch errors before they reach production.',
-    },
-    {
-      icon: <Waves className="w-12 h-12 text-cyan-400" />,
-      title: 'Full Streaming Support',
-      description:
-        'Stream data from server to client progressively. Perfect for AI applications and real-time updates.',
-    },
-    {
-      icon: <Sparkles className="w-12 h-12 text-cyan-400" />,
-      title: 'Next Generation Ready',
-      description:
-        'Built from the ground up for modern web applications. Deploy anywhere JavaScript runs.',
+      label: 'U5 Mortality',
+      value: '110',
+      icon: 'Activity' as const,
+      color: 'bg-red-500',
+      sub: 'Deaths per 1,000 births',
     },
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
-      <section className="relative py-20 px-6 text-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10"></div>
-        <div className="relative max-w-5xl mx-auto">
-          <div className="flex items-center justify-center gap-6 mb-6">
-            <img
-              src="/tanstack-circle-logo.png"
-              alt="TanStack Logo"
-              className="w-24 h-24 md:w-32 md:h-32"
-            />
-            <h1 className="text-6xl md:text-7xl font-black text-white [letter-spacing:-0.08em]">
-              <span className="text-gray-300">TANSTACK</span>{' '}
-              <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                START
-              </span>
-            </h1>
+    <div className="space-y-8 fade-in">
+      {/* Hero Section */}
+      <div className="bg-gradient-to-r from-green-700 to-green-600 rounded-2xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+        <div className="absolute top-0 right-0 opacity-10 transform translate-x-1/4 -translate-y-1/4">
+          <Icon name="Activity" size={400} />
+        </div>
+        <div className="relative z-10">
+          <div className="inline-block px-3 py-1 bg-green-800 rounded-full text-xs font-semibold mb-4 border border-green-500">
+            OFFICIAL DATA RELEASE
           </div>
-          <p className="text-2xl md:text-3xl text-gray-300 mb-4 font-light">
-            The framework for next generation AI applications
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 tracking-tight">
+            Nigeria Demographic and
+            <br />
+            Health Survey 2024
+          </h1>
+          <p className="text-green-100 text-lg max-w-2xl mb-8 leading-relaxed">
+            Explore comprehensive data on population, health, and nutrition from
+            the 2024 NDHS. This tool provides interactive access to key
+            indicators from all 19 chapters of the final report.
           </p>
-          <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
-            Full-stack framework powered by TanStack Router for React and Solid.
-            Build modern applications with server functions, streaming, and type
-            safety.
-          </p>
-          <div className="flex flex-col items-center gap-4">
-            <a
-              href="https://tanstack.com/start"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-colors shadow-lg shadow-cyan-500/50"
+          <div className="flex flex-wrap gap-4">
+            <Link
+              to="/chapter/$id"
+              params={{ id: '1' }}
+              className="bg-white text-green-700 px-6 py-3 rounded-lg font-bold hover:bg-green-50 transition-all shadow-lg flex items-center transform hover:-translate-y-1"
             >
-              Documentation
-            </a>
-            <p className="text-gray-400 text-sm mt-2">
-              Begin your TanStack Start journey by editing{' '}
-              <code className="px-2 py-1 bg-slate-700 rounded text-cyan-400">
-                /src/routes/index.tsx
-              </code>
+              Start Exploring <Icon name="ChevronRight" size={20} className="ml-2" />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Key Stats Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {keyStats.map((stat, idx) => (
+          <div
+            key={idx}
+            className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex items-start space-x-4 hover:shadow-md transition-shadow cursor-default group"
+          >
+            <div
+              className={`${stat.color} p-3 rounded-xl text-white shadow-md group-hover:scale-110 transition-transform`}
+            >
+              <Icon name={stat.icon} size={24} />
+            </div>
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900">{stat.value}</h3>
+              <p className="text-sm font-semibold text-gray-700">{stat.label}</p>
+              <p className="text-xs text-gray-400 mt-1">{stat.sub}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Regional Fertility Chart */}
+      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
+        <div className="flex justify-between items-end mb-6">
+          <div>
+            <h3 className="text-xl font-bold text-gray-900">
+              Regional Disparities: Fertility
+            </h3>
+            <p className="text-sm text-gray-500 mt-1">
+              Total Fertility Rate (TFR) by Geopolitical Zone
             </p>
           </div>
+          <div className="hidden sm:block text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+            Chapter 5 Data
+          </div>
         </div>
-      </section>
-
-      <section className="py-16 px-6 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10"
+        <div className="h-72 w-full">
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={regionalFertilityData.data}
+              margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
             >
-              <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold text-white mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-gray-400 leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+              <CartesianGrid
+                strokeDasharray="3 3"
+                vertical={false}
+                stroke="#e2e8f0"
+              />
+              <XAxis
+                dataKey="name"
+                axisLine={false}
+                tickLine={false}
+                tick={{ fontSize: 12 }}
+                dy={10}
+              />
+              <YAxis
+                axisLine={false}
+                tickLine={false}
+                width={30}
+                domain={[0, 8]}
+              />
+              <Tooltip cursor={{ fill: '#f0fdf4' }} />
+              <Bar
+                dataKey="value"
+                fill="#008751"
+                radius={[4, 4, 0, 0]}
+                barSize={60}
+              >
+                <LabelList
+                  dataKey="value"
+                  position="top"
+                  style={{ fontWeight: 'bold', fill: '#374151' }}
+                />
+              </Bar>
+            </BarChart>
+          </ResponsiveContainer>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

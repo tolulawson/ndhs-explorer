@@ -1,0 +1,16 @@
+{
+  "id": 12,
+  "title": "Malaria",
+  "icon": "Droplet",
+  "intro": "Ownership and use of Insecticide-Treated Nets (ITNs), Intermittent Preventive Treatment in pregnancy (IPTp), and treatment of fever in children.",
+  "subsections": [
+    "12.1 ITN Ownership",
+    "12.3 ITN Use",
+    "12.5 Malaria in Pregnancy"
+  ],
+  "highlights": [
+    { "label": "ITN Ownership", "value": "72%" },
+    { "label": "ITN Usage", "value": "50%" },
+    { "label": "IPTp (2+ doses)", "value": "61%" }
+  ]
+}

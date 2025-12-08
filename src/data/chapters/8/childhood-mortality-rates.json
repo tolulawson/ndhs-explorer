@@ -1,0 +1,12 @@
+{
+  "title": "Childhood Mortality Rates (per 1,000 live births)",
+  "type": "bar",
+  "data": [
+    { "name": "Neonatal", "value": 39 },
+    { "name": "Infant", "value": 63 },
+    { "name": "Under-5", "value": 110 }
+  ],
+  "color": "#ef4444",
+  "unit": "",
+  "domain": [0, 120]
+}

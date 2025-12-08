@@ -1,0 +1,10 @@
+{
+  "title": "Marital Status Distribution (Women)",
+  "type": "pie",
+  "data": [
+    { "name": "Never Married", "value": 25 },
+    { "name": "Married", "value": 65 },
+    { "name": "Living Together", "value": 4 },
+    { "name": "Widowed/Div", "value": 6 }
+  ]
+}

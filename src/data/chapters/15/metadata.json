@@ -1,0 +1,16 @@
+{
+  "id": 15,
+  "title": "Women's Empowerment",
+  "icon": "Users",
+  "intro": "Indicators of women's empowerment including employment, earnings, control over assets, and participation in household decision making.",
+  "subsections": [
+    "15.1 Employment",
+    "15.5 Asset Ownership",
+    "15.6 Decision Making"
+  ],
+  "highlights": [
+    { "label": "Owns House/Land", "value": "22%" },
+    { "label": "Decides Health", "value": "54%" },
+    { "label": "Employed", "value": "66%" }
+  ]
+}

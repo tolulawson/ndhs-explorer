@@ -1,0 +1,9 @@
+{
+  "title": "Contraceptive Use Mix",
+  "type": "pie",
+  "data": [
+    { "name": "Modern Method", "value": 18 },
+    { "name": "Traditional", "value": 6 },
+    { "name": "No Method", "value": 76 }
+  ]
+}

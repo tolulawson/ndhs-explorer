@@ -1,0 +1,10 @@
+{
+  "title": "Nutritional Status (Children Under 5)",
+  "type": "bar",
+  "data": [
+    { "name": "Stunting", "value": 37 },
+    { "name": "Wasting", "value": 7 },
+    { "name": "Underweight", "value": 22 }
+  ],
+  "color": "#eab308"
+}

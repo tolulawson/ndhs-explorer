@@ -1,0 +1,9 @@
+{
+  "title": "COVID-19 Awareness & Action",
+  "type": "bar",
+  "data": [
+    { "name": "Heard of it", "value": 98 },
+    { "name": "Vaccinated", "value": 24 }
+  ],
+  "color": "#0f766e"
+}

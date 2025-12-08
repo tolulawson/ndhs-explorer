@@ -1,0 +1,10 @@
+{
+  "title": "Survey Response Rates (%)",
+  "type": "bar",
+  "data": [
+    { "name": "Households", "value": 99 },
+    { "name": "Women", "value": 97 },
+    { "name": "Men", "value": 95 }
+  ],
+  "color": "#008751"
+}

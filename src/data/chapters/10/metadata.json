@@ -1,0 +1,17 @@
+{
+  "id": 10,
+  "title": "Child Health",
+  "icon": "Syringe",
+  "intro": "Information on birth weight, vaccination status, and the prevalence and treatment of common childhood illnesses (ARI, Fever, Diarrhea).",
+  "subsections": [
+    "10.2 Vaccination",
+    "10.3 ARI Symptoms",
+    "10.4 Fever",
+    "10.5 Diarrhea"
+  ],
+  "highlights": [
+    { "label": "Basic Vaccination", "value": "58%" },
+    { "label": "Fever Prevalence", "value": "18%" },
+    { "label": "Diarrhea Treated", "value": "65%" }
+  ]
+}

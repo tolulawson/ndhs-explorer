@@ -1,0 +1,18 @@
+{
+  "id": 2,
+  "title": "Housing & Population",
+  "icon": "Home",
+  "intro": "This chapter provides a profile of the demographic and socioeconomic characteristics of the households in the 2024 NDHS sample. Information on housing characteristics (electricity, water, sanitation) helps assess the socioeconomic status of the population.",
+  "subsections": [
+    "2.1 Housing Characteristics",
+    "2.2 Household Wealth",
+    "2.3 Population Composition",
+    "2.6 Education"
+  ],
+  "highlights": [
+    { "label": "Urban Population", "value": "54%" },
+    { "label": "Solid Fuel Usage", "value": "70%" },
+    { "label": "Electricity Access", "value": "59%" },
+    { "label": "School Attendance", "value": "68%" }
+  ]
+}

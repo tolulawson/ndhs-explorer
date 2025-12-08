@@ -1,0 +1,12 @@
+{
+  "title": "Internet Usage by Wealth Quintile",
+  "type": "line",
+  "data": [
+    { "name": "Lowest", "value": 8 },
+    { "name": "Second", "value": 15 },
+    { "name": "Middle", "value": 32 },
+    { "name": "Fourth", "value": 58 },
+    { "name": "Highest", "value": 89 }
+  ],
+  "color": "#8b5cf6"
+}

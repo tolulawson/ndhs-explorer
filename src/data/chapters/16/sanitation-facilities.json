@@ -1,0 +1,9 @@
+{
+  "title": "Sanitation Facilities Distribution",
+  "type": "pie",
+  "data": [
+    { "name": "Improved", "value": 52 },
+    { "name": "Unimproved", "value": 29 },
+    { "name": "Open Defecation", "value": 19 }
+  ]
+}

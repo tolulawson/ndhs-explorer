@@ -1,0 +1,16 @@
+{
+  "id": 13,
+  "title": "HIV/AIDS Knowledge",
+  "icon": "Shield",
+  "intro": "Knowledge of HIV transmission, comprehensive knowledge levels, stigma, and uptake of HIV testing services.",
+  "subsections": [
+    "13.1 Knowledge & Attitudes",
+    "13.2 Stigma",
+    "13.4 HIV Testing"
+  ],
+  "highlights": [
+    { "label": "Knows Prevention", "value": "74%" },
+    { "label": "Ever Tested", "value": "35%" },
+    { "label": "Accepting Attitude", "value": "45%" }
+  ]
+}

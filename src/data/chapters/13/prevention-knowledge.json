@@ -1,0 +1,10 @@
+{
+  "title": "Knowledge of Prevention Methods",
+  "type": "bar",
+  "data": [
+    { "name": "Use Condoms", "value": 72 },
+    { "name": "Limit Partners", "value": 81 },
+    { "name": "Healthy can have HIV", "value": 68 }
+  ],
+  "color": "#db2777"
+}

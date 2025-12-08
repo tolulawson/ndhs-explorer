@@ -1,0 +1,16 @@
+{
+  "id": 19,
+  "title": "NCDs & Other Health",
+  "icon": "Activity",
+  "intro": "Data on non-communicable diseases such as hypertension and diabetes, as well as awareness and vaccination status regarding COVID-19.",
+  "subsections": [
+    "19.1 Blood Pressure",
+    "19.3 Tuberculosis",
+    "19.4 COVID-19"
+  ],
+  "highlights": [
+    { "label": "High BP Prevalence", "value": "28%" },
+    { "label": "Heard of COVID", "value": "98%" },
+    { "label": "COVID Vaccinated", "value": "24%" }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 9,
+  "title": "Maternal Health",
+  "icon": "Activity",
+  "intro": "Indicators regarding antenatal care (ANC), delivery services, and postnatal care (PNC) for women and newborns.",
+  "subsections": [
+    "9.1 Antenatal Care",
+    "9.4 Delivery Services",
+    "9.6 Postnatal Care"
+  ],
+  "highlights": [
+    { "label": "ANC 4+ Visits", "value": "67%" },
+    { "label": "Facility Delivery", "value": "51%" },
+    { "label": "Skilled Attendant", "value": "55%" }
+  ]
+}
