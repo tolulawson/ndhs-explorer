@@ -1,6 +1,7 @@
 {
   "name": "ndhs-explorer",
   "description": "Interactive data explorer for the Nigeria Demographic and Health Survey (NDHS) 2024. Visualize key health indicators across 19 chapters covering fertility, mortality, nutrition, and more.",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {

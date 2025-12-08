@@ -141,4 +141,4 @@ bun run check    # Run both
 
 ## License
 
-This project is for educational and informational purposes. The underlying survey data is publicly available from the DHS Program.
+This project is licensed under the [MIT License](LICENSE). The underlying survey data is publicly available from the DHS Program.
