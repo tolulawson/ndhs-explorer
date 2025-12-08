@@ -1,0 +1,16 @@
+{
+  "id": 17,
+  "title": "Domestic Violence",
+  "icon": "Shield",
+  "intro": "Prevalence of physical, sexual, and emotional violence experienced by women, usually perpetrated by a current or former partner.",
+  "subsections": [
+    "17.2 Physical Violence",
+    "17.3 Sexual Violence",
+    "17.8 Help Seeking"
+  ],
+  "highlights": [
+    { "label": "Physical Violence", "value": "28%" },
+    { "label": "Sexual Violence", "value": "6%" },
+    { "label": "Emotional Violence", "value": "24%" }
+  ]
+}

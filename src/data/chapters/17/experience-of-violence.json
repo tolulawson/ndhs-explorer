@@ -1,0 +1,10 @@
+{
+  "title": "Experience of Violence (Women 15-49)",
+  "type": "bar",
+  "data": [
+    { "name": "Physical", "value": 28 },
+    { "name": "Sexual", "value": 6 },
+    { "name": "Emotional", "value": 24 }
+  ],
+  "color": "#be123c"
+}

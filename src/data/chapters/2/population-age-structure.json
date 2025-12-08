@@ -1,0 +1,10 @@
+{
+  "title": "Population Age Structure",
+  "type": "bar",
+  "data": [
+    { "name": "0-14 yrs", "value": 43 },
+    { "name": "15-64 yrs", "value": 53 },
+    { "name": "65+ yrs", "value": 4 }
+  ],
+  "color": "#3b82f6"
+}

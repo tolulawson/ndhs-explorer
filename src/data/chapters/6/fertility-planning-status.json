@@ -1,0 +1,9 @@
+{
+  "title": "Fertility Planning Status",
+  "type": "pie",
+  "data": [
+    { "name": "Wanted Then", "value": 75 },
+    { "name": "Wanted Later", "value": 18 },
+    { "name": "Not Wanted", "value": 7 }
+  ]
+}

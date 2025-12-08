@@ -1,0 +1,11 @@
+{
+  "title": "Ideal Family Size by Wealth",
+  "type": "bar",
+  "data": [
+    { "name": "Lowest", "value": 7.5 },
+    { "name": "Highest", "value": 4.2 }
+  ],
+  "color": "#8b5cf6",
+  "unit": "",
+  "domain": [0, 10]
+}

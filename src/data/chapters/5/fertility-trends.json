@@ -1,0 +1,12 @@
+{
+  "title": "Fertility Trends (2013-2024)",
+  "type": "line",
+  "data": [
+    { "name": "2013", "value": 5.5 },
+    { "name": "2018", "value": 5.3 },
+    { "name": "2024", "value": 5.3 }
+  ],
+  "color": "#008751",
+  "unit": "",
+  "domain": [0, 8]
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Breastfeeding Practices",
+  "type": "pie",
+  "data": [
+    { "name": "Exclusive (0-5m)", "value": 29 },
+    { "name": "Mixed/Other", "value": 71 }
+  ]
+}

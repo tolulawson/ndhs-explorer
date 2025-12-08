@@ -1,0 +1,17 @@
+{
+  "id": 3,
+  "title": "Respondent Characteristics",
+  "icon": "Users",
+  "intro": "Profiles the background characteristics of the women and men interviewed, including age, marital status, education, religion, and ethnicity. This context is crucial for interpreting demographic and health findings.",
+  "subsections": [
+    "3.1 Background",
+    "3.2 Education & Literacy",
+    "3.3 Media Exposure",
+    "3.4 Employment"
+  ],
+  "highlights": [
+    { "label": "Women Literate", "value": "52%" },
+    { "label": "Men Literate", "value": "71%" },
+    { "label": "Internet Use (W)", "value": "45%" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": 5,
+  "title": "Fertility",
+  "icon": "Baby",
+  "intro": "Fertility data is collected to analyze trends, age-specific fertility rates, and the proximate determinants of fertility. The Total Fertility Rate (TFR) is a key outcome measure.",
+  "subsections": [
+    "5.1 Current Fertility",
+    "5.2 Children Ever Born",
+    "5.3 Birth Intervals",
+    "5.8 Teenage Pregnancy"
+  ],
+  "highlights": [
+    { "label": "Total Fertility Rate", "value": "5.3" },
+    { "label": "Teenage Pregnancy", "value": "19%" },
+    { "label": "Urban TFR", "value": "4.5" }
+  ]
+}

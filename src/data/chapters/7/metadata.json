@@ -1,0 +1,16 @@
+{
+  "id": 7,
+  "title": "Family Planning",
+  "icon": "Shield",
+  "intro": "Assessments of knowledge and use of contraceptive methods, sources of supply, and unmet need for family planning services.",
+  "subsections": [
+    "7.1 Contraceptive Knowledge",
+    "7.2 Source of Methods",
+    "7.5 Demand for FP"
+  ],
+  "highlights": [
+    { "label": "Modern CPR", "value": "18%" },
+    { "label": "Unmet Need", "value": "19%" },
+    { "label": "Demand Satisfied", "value": "48%" }
+  ]
+}

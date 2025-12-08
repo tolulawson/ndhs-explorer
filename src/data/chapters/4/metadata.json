@@ -1,0 +1,17 @@
+{
+  "id": 4,
+  "title": "Marriage & Sexual Activity",
+  "icon": "Users",
+  "intro": "Marriage and sexual activity are key determinants of fertility. This chapter presents data on marital status, polygyny, age at first marriage, and age at first sexual intercourse.",
+  "subsections": [
+    "4.1 Marital Status",
+    "4.3 Polygyny",
+    "4.4 Age at First Marriage",
+    "4.6 Recent Sexual Activity"
+  ],
+  "highlights": [
+    { "label": "Median Age (Marriage)", "value": "19.2" },
+    { "label": "Polygyny Rate", "value": "28%" },
+    { "label": "Never Married (W)", "value": "25%" }
+  ]
+}

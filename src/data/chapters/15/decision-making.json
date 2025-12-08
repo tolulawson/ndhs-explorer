@@ -1,0 +1,10 @@
+{
+  "title": "Participation in Decision Making (Women)",
+  "type": "bar",
+  "data": [
+    { "name": "Own Health", "value": 54 },
+    { "name": "HH Purchases", "value": 48 },
+    { "name": "Family Visits", "value": 62 }
+  ],
+  "color": "#9333ea"
+}

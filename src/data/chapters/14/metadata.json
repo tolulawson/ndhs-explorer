@@ -1,0 +1,15 @@
+{
+  "id": 14,
+  "title": "Disability",
+  "icon": "Activity",
+  "intro": "Prevalence of disability across six domains: seeing, hearing, communicating, remembering/concentrating, walking/climbing steps, and self-care.",
+  "subsections": [
+    "14.1 Disability by Domain",
+    "14.2 Disability by Background"
+  ],
+  "highlights": [
+    { "label": "Any Difficulty", "value": "8%" },
+    { "label": "Visual Difficulty", "value": "4%" },
+    { "label": "Walking Difficulty", "value": "3%" }
+  ]
+}

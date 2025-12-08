@@ -1,0 +1,16 @@
+{
+  "id": 11,
+  "title": "Nutrition",
+  "icon": "Scale",
+  "intro": "Nutritional status of children (anthropometry) and women, infant and young child feeding (IYCF) practices, and micronutrient intake.",
+  "subsections": [
+    "11.1 Child Nutrition",
+    "11.3 IYCF Practices",
+    "11.7 Women's Nutrition"
+  ],
+  "highlights": [
+    { "label": "Stunting (U5)", "value": "37%" },
+    { "label": "Wasting (U5)", "value": "7%" },
+    { "label": "Exclusive BF", "value": "29%" }
+  ]
+}

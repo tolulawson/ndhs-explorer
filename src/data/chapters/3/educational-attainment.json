@@ -1,0 +1,10 @@
+{
+  "title": "Educational Attainment (Women 15-49)",
+  "type": "pie",
+  "data": [
+    { "name": "No Education", "value": 35 },
+    { "name": "Primary", "value": 18 },
+    { "name": "Secondary", "value": 38 },
+    { "name": "Higher", "value": 9 }
+  ]
+}

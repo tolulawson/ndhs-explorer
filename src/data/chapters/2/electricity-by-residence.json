@@ -1,0 +1,10 @@
+{
+  "title": "Access to Electricity by Residence",
+  "type": "bar",
+  "data": [
+    { "name": "Urban", "value": 83 },
+    { "name": "Rural", "value": 39 },
+    { "name": "National", "value": 59 }
+  ],
+  "color": "#eab308"
+}

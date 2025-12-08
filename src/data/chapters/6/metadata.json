@@ -1,0 +1,16 @@
+{
+  "id": 6,
+  "title": "Fertility Preferences",
+  "icon": "Heart",
+  "intro": "Information on desire for more children, ideal family size, and gender preference helps forecast future fertility needs and demand for family planning.",
+  "subsections": [
+    "6.1 Desire for Another Child",
+    "6.2 Ideal Family Size",
+    "6.3 Planning Status"
+  ],
+  "highlights": [
+    { "label": "Ideal Family Size", "value": "6.1" },
+    { "label": "Want No More", "value": "24%" },
+    { "label": "Unwanted Births", "value": "7%" }
+  ]
+}

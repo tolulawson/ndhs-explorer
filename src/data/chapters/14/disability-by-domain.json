@@ -1,0 +1,11 @@
+{
+  "title": "Prevalence of Disability by Domain",
+  "type": "bar",
+  "data": [
+    { "name": "Seeing", "value": 4 },
+    { "name": "Hearing", "value": 2 },
+    { "name": "Walking", "value": 3 },
+    { "name": "Cognitive", "value": 1 }
+  ],
+  "color": "#6b7280"
+}

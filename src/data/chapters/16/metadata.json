@@ -1,0 +1,16 @@
+{
+  "id": 16,
+  "title": "WASH",
+  "icon": "Droplet",
+  "intro": "Information on drinking water sources, sanitation facilities, and handwashing practices, which are crucial for preventing disease.",
+  "subsections": [
+    "16.1 Water Sources",
+    "16.2 Sanitation",
+    "16.4 Handwashing"
+  ],
+  "highlights": [
+    { "label": "Basic Water", "value": "68%" },
+    { "label": "Basic Sanitation", "value": "52%" },
+    { "label": "Open Defecation", "value": "19%" }
+  ]
+}

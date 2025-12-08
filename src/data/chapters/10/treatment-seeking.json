@@ -1,0 +1,10 @@
+{
+  "title": "Treatment Seeking for Illness",
+  "type": "bar",
+  "data": [
+    { "name": "Fever", "value": 65 },
+    { "name": "ARI", "value": 55 },
+    { "name": "Diarrhea", "value": 48 }
+  ],
+  "color": "#f59e0b"
+}

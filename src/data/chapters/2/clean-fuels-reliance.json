@@ -1,0 +1,8 @@
+{
+  "title": "Primary Reliance on Clean Fuels",
+  "type": "pie",
+  "data": [
+    { "name": "Clean Fuels", "value": 30 },
+    { "name": "Solid Fuels", "value": 70 }
+  ]
+}

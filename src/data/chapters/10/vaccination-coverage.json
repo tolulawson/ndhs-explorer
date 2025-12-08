@@ -1,0 +1,11 @@
+{
+  "title": "Vaccination Coverage (12-23 mos)",
+  "type": "bar",
+  "data": [
+    { "name": "BCG", "value": 75 },
+    { "name": "DPT3", "value": 58 },
+    { "name": "Measles", "value": 62 },
+    { "name": "All Basic", "value": 41 }
+  ],
+  "color": "#3b82f6"
+}

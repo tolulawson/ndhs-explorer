@@ -1,0 +1,9 @@
+{
+  "title": "ITN Ownership vs Usage",
+  "type": "bar",
+  "data": [
+    { "name": "Ownership", "value": 72 },
+    { "name": "Usage", "value": 50 }
+  ],
+  "color": "#059669"
+}

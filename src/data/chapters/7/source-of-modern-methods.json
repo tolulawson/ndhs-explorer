@@ -1,0 +1,10 @@
+{
+  "title": "Source of Modern Methods",
+  "type": "bar",
+  "data": [
+    { "name": "Public Sector", "value": 62 },
+    { "name": "Private Medical", "value": 28 },
+    { "name": "Other", "value": 10 }
+  ],
+  "color": "#0ea5e9"
+}

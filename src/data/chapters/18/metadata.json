@@ -1,0 +1,16 @@
+{
+  "id": 18,
+  "title": "Female Genital Mutilation",
+  "icon": "Activity",
+  "intro": "Prevalence of female genital mutilation (FGM/C), age at circumcision, and attitudes towards discontinuing the practice.",
+  "subsections": [
+    "18.1 Knowledge of FGM",
+    "18.2 Prevalence",
+    "18.6 Attitudes"
+  ],
+  "highlights": [
+    { "label": "Prevalence (15-49)", "value": "15%" },
+    { "label": "Circumcised <5y", "value": "8%" },
+    { "label": "Support Ending", "value": "78%" }
+  ]
+}
