@@ -3,7 +3,7 @@ import { Icon } from '../components/Icon'
 import { ChartRenderer } from '../components/ChartRenderer'
 import { getChapter } from '../lib/chapters'
 import type { Chapter } from '../lib/chapters'
-import { getBaseUrl, getCanonicalUrl } from '../lib/url'
+import { getBaseUrl } from '../lib/url'
 
 export const Route = createFileRoute('/chapter/$id')({
   loader: ({ params }) => {
@@ -16,13 +16,17 @@ export const Route = createFileRoute('/chapter/$id')({
   },
   head: ({ loaderData, params }) => {
     const baseUrl = getBaseUrl()
-    const canonicalUrl = getCanonicalUrl()
+    const pageUrl = `${baseUrl}/chapter/${params.id}`
+
+    if (!loaderData) {
+      return { title: 'Nigeria DHS 2024 Explorer' }
+    }
+
     const title = `${loaderData.title} | Nigeria DHS 2024 Explorer`
     const description =
       loaderData.intro.length > 160
         ? `${loaderData.intro.slice(0, 157)}...`
         : loaderData.intro
-    const pageUrl = `${canonicalUrl}/chapter/${params.id}`
 
     return {
       title,
