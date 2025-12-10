@@ -11,8 +11,52 @@ import {
 } from 'recharts'
 import { Icon } from '../components/Icon'
 import { regionalFertilityData } from '../lib/chapters'
+import { getBaseUrl, getCanonicalUrl } from '../lib/url'
 
 export const Route = createFileRoute('/')({
+  head: () => {
+    const baseUrl = getBaseUrl()
+    const canonicalUrl = getCanonicalUrl()
+    const title =
+      'Nigeria DHS 2024 Explorer | Interactive Health Data Visualization'
+    const description =
+      'Explore comprehensive data on population, health, and nutrition from the Nigeria Demographic and Health Survey 2024. Interactive charts covering fertility, mortality, vaccination, and more.'
+
+    return {
+      title,
+      meta: [
+        { name: 'description', content: description },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: description },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: canonicalUrl },
+        { property: 'og:image', content: `${baseUrl}/api/og?type=home` },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:description', content: description },
+        { name: 'twitter:image', content: `${baseUrl}/api/og?type=home` },
+      ],
+      links: [{ rel: 'canonical', href: canonicalUrl }],
+      scripts: [
+        {
+          type: 'application/ld+json',
+          children: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'Nigeria DHS 2024 Explorer',
+            url: canonicalUrl,
+            description,
+            publisher: {
+              '@type': 'Organization',
+              name: 'National Population Commission (NPC) [Nigeria] and ICF',
+            },
+          }),
+        },
+      ],
+    }
+  },
   component: LandingView,
 })
 

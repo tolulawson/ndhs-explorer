@@ -7,9 +7,15 @@ import tailwindcss from '@tailwindcss/vite'
 import { nitro } from 'nitro/vite'
 
 const config = defineConfig({
+  define: {
+    'import.meta.env.VITE_VERCEL_URL': JSON.stringify(process.env.VERCEL_URL),
+    'import.meta.env.VITE_VERCEL_ENV': JSON.stringify(process.env.VERCEL_ENV),
+  },
   plugins: [
     devtools(),
-    nitro(),
+    nitro({
+      scanDirs: ['server'],
+    }),
     // this is the plugin that enables path aliases
     viteTsConfigPaths({
       projects: ['./tsconfig.json'],
