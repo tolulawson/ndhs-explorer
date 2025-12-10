@@ -3,6 +3,7 @@ import { Icon } from '../components/Icon'
 import { ChartRenderer } from '../components/ChartRenderer'
 import { getChapter } from '../lib/chapters'
 import type { Chapter } from '../lib/chapters'
+import { getBaseUrl, getCanonicalUrl } from '../lib/url'
 
 export const Route = createFileRoute('/chapter/$id')({
   loader: ({ params }) => {
@@ -12,6 +13,60 @@ export const Route = createFileRoute('/chapter/$id')({
       throw notFound()
     }
     return chapter
+  },
+  head: ({ loaderData, params }) => {
+    const baseUrl = getBaseUrl()
+    const canonicalUrl = getCanonicalUrl()
+    const title = `${loaderData.title} | Nigeria DHS 2024 Explorer`
+    const description =
+      loaderData.intro.length > 160
+        ? `${loaderData.intro.slice(0, 157)}...`
+        : loaderData.intro
+    const pageUrl = `${canonicalUrl}/chapter/${params.id}`
+
+    return {
+      title,
+      meta: [
+        { name: 'description', content: description },
+        { property: 'og:title', content: title },
+        { property: 'og:description', content: description },
+        { property: 'og:type', content: 'article' },
+        { property: 'og:url', content: pageUrl },
+        {
+          property: 'og:image',
+          content: `${baseUrl}/api/og?type=chapter&id=${params.id}`,
+        },
+        { property: 'og:image:width', content: '1200' },
+        { property: 'og:image:height', content: '630' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: title },
+        { name: 'twitter:description', content: description },
+        {
+          name: 'twitter:image',
+          content: `${baseUrl}/api/og?type=chapter&id=${params.id}`,
+        },
+      ],
+      links: [{ rel: 'canonical', href: pageUrl }],
+      scripts: [
+        {
+          type: 'application/ld+json',
+          children: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Dataset',
+            name: loaderData.title,
+            description: loaderData.intro,
+            url: pageUrl,
+            creator: {
+              '@type': 'Organization',
+              name: 'National Population Commission (NPC) [Nigeria] and ICF',
+            },
+            temporalCoverage: '2023-2024',
+            spatialCoverage: 'Nigeria',
+            license: 'https://dhsprogram.com/data/terms-of-use.cfm',
+          }),
+        },
+      ],
+    }
   },
   component: ChapterView,
 })
