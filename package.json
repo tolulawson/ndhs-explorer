@@ -28,6 +28,7 @@
     "@tanstack/router-plugin": "^1.132.0",
     "drizzle-kit": "^0.30.0",
     "drizzle-orm": "^0.39.0",
+    "firebase": "^12.6.0",
     "lucide-react": "^0.544.0",
     "nitro": "latest",
     "react": "^19.2.0",

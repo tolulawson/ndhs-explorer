@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {
   HeadContent,
   Outlet,
@@ -11,6 +11,7 @@ import { TanStackDevtools } from '@tanstack/react-devtools'
 import { Sidebar } from '../components/Sidebar'
 import { Icon } from '../components/Icon'
 import { getAllChapters } from '../lib/chapters'
+import { initAnalytics } from '../lib/analytics'
 
 import appCss from '../styles.css?url'
 
@@ -50,6 +51,10 @@ function RootComponent() {
 function RootDocument({ children }: { children: React.ReactNode }) {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const chapters = getAllChapters()
+
+  useEffect(() => {
+    initAnalytics()
+  }, [])
 
   return (
     <html lang="en">
