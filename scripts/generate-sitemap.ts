@@ -3,7 +3,16 @@ import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
-const BASE_URL = 'https://nigeriastats.com'
+
+// Sitemap always uses production URL
+function getBaseUrl() {
+  if (process.env.VERCEL_PROJECT_PRODUCTION_URL) {
+    return `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+  }
+  return 'http://localhost:3000'
+}
+
+const BASE_URL = getBaseUrl()
 
 const chaptersDir = path.resolve(__dirname, '../src/data/chapters')
 const publicDir = path.resolve(__dirname, '../public')

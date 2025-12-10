@@ -11,12 +11,11 @@ import {
 } from 'recharts'
 import { Icon } from '../components/Icon'
 import { regionalFertilityData } from '../lib/chapters'
-import { getBaseUrl, getCanonicalUrl } from '../lib/url'
+import { getBaseUrl } from '../lib/url'
 
 export const Route = createFileRoute('/')({
   head: () => {
     const baseUrl = getBaseUrl()
-    const canonicalUrl = getCanonicalUrl()
     const title =
       'Nigeria DHS 2024 Explorer | Interactive Health Data Visualization'
     const description =
@@ -29,7 +28,7 @@ export const Route = createFileRoute('/')({
         { property: 'og:title', content: title },
         { property: 'og:description', content: description },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: canonicalUrl },
+        { property: 'og:url', content: baseUrl },
         { property: 'og:image', content: `${baseUrl}/og/home.png` },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
@@ -38,7 +37,7 @@ export const Route = createFileRoute('/')({
         { name: 'twitter:description', content: description },
         { name: 'twitter:image', content: `${baseUrl}/og/home.png` },
       ],
-      links: [{ rel: 'canonical', href: canonicalUrl }],
+      links: [{ rel: 'canonical', href: baseUrl }],
       scripts: [
         {
           type: 'application/ld+json',
@@ -46,7 +45,7 @@ export const Route = createFileRoute('/')({
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: 'Nigeria DHS 2024 Explorer',
-            url: canonicalUrl,
+            url: baseUrl,
             description,
             publisher: {
               '@type': 'Organization',
