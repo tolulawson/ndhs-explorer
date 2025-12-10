@@ -34,7 +34,7 @@ export const Route = createFileRoute('/chapter/$id')({
         { property: 'og:url', content: pageUrl },
         {
           property: 'og:image',
-          content: `${baseUrl}/api/og?type=chapter&id=${params.id}`,
+          content: `${baseUrl}/og/chapter-${params.id}.png`,
         },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
@@ -43,7 +43,7 @@ export const Route = createFileRoute('/chapter/$id')({
         { name: 'twitter:description', content: description },
         {
           name: 'twitter:image',
-          content: `${baseUrl}/api/og?type=chapter&id=${params.id}`,
+          content: `${baseUrl}/og/chapter-${params.id}.png`,
         },
       ],
       links: [{ rel: 'canonical', href: pageUrl }],

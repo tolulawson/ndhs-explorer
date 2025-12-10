@@ -1,3 +1,4 @@
+import type React from 'react'
 import { Resvg } from '@resvg/resvg-js'
 import satori from 'satori'
 import { defineEventHandler, getQuery, setHeader } from 'h3'
@@ -347,7 +348,7 @@ export default defineEventHandler(async (event) => {
       title: chapterData?.title,
       chapterId: chapterData?.id,
       description: chapterData?.intro,
-    }),
+    }) as React.ReactNode,
     {
       width: 1200,
       height: 630,
