@@ -16,7 +16,13 @@ let analytics: Analytics | null = null
 
 export const initAnalytics = async () => {
   if (analytics) return analytics
-  
+
+  console.log('[Analytics] Initializing...', {
+    hasApiKey: !!firebaseConfig.apiKey,
+    projectId: firebaseConfig.projectId,
+    mode: import.meta.env.MODE
+  })
+
   const supported = await isSupported()
   if (supported) {
     const app = initializeApp(firebaseConfig)
